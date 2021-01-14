@@ -20,15 +20,15 @@ Authentication was done through the provided Udacity lab.
 
 ### 2: Automated ML Experiment
 
-a. Create a New Automated ML run
-b. Select and upload the Bankmarketing dataset
-![alt Architectural Diagram](screenshots/1-registered-datasets.png)
-c. Configure a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes.
-d. Run the experiment using **Classification**, ensure **Explain best model** is checked. <br> On Exit criterion, reduce the default (3 hours) to 1 and reduce the **Concurrency** from default to 5 (this number should always be less than the number of the compute cluster) <br><br> Note: This process takes about 15 minutes and it runs about 5 minutes per iteration
-e. Experiment completed
-![alt Experiment completed](screenshots/2-experiment-completed.png)
-f. Best model after experiment completed
-![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
+  * Create a New Automated ML run
+  * Select and upload the Bankmarketing dataset
+   ![alt Architectural Diagram](screenshots/1-registered-datasets.png)
+  * Configure a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes.
+  * Run the experiment using **Classification**, ensure **Explain best model** is checked. <br> On Exit criterion, reduce the default (3 hours) to 1 and reduce the         **Concurrency** from default to 5 (this number should always be less than the number of the compute cluster) <br><br> Note: This process takes about 15 minutes and it runs about   5 minutes per iteration
+  * Experiment completed
+    ![alt Experiment completed](screenshots/2-experiment-completed.png)
+  * Best model after experiment completed
+    ![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
 
 ### 3: Deploy the best model
 
