@@ -24,7 +24,7 @@ Authentication was done through the provided Udacity lab.
   * Select and upload the Bankmarketing dataset
    ![alt Architectural Diagram](screenshots/1-registered-datasets.png)
   * Configure a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes.
-  * Run the experiment using **Classification**, ensure **Explain best model** is checked. <br> On Exit criterion, reduce the default (3 hours) to 1 and reduce the         **Concurrency** from default to 5 (this number should always be less than the number of the compute cluster) <br><br> Note: This process takes about 15 minutes and it runs about   5 minutes per iteration
+  * Run the experiment using **Classification**, ensure **Explain best model** is checked. <br> On Exit criterion, reduce the default (3 hours) to 1 and reduce the             **Concurrency** from default to 5 (this number should always be less than the number of the compute cluster)
   * Experiment completed
     ![alt Experiment completed](screenshots/2-experiment-completed.png)
   * Best model after experiment completed
