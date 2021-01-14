@@ -25,9 +25,9 @@ Authentication was done through the provided Udacity lab.
    ![alt Architectural Diagram](screenshots/1-registered-datasets.png)
   * Configure a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes.
   * Run the experiment using **Classification**, ensure **Explain best model** is checked. <br> On Exit criterion, reduce the default (3 hours) to 1 and reduce the             **Concurrency** from default to 5
-  * Experiment completed
+  * Screenshot of Experiment completed
     ![alt Experiment completed](screenshots/2-experiment-completed.png)
-  * Best model after experiment completed
+  * Screenshot of Best model after experiment completed
     ![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
 
 ### 3: Deploy the best model
