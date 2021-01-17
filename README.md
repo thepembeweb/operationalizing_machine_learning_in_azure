@@ -35,8 +35,8 @@ Authentication was done through the provided Udacity lab.
 
 ### 3: Deploy the best model
 Select the best model for deployment Deploy the model and enable "Authentication" Deploy the model using Azure Container Instance (ACI)
+![alt Best model after experiment completed](screenshots/_5-deploy-best-model.png)
 ![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
-
 
 ### 4: Enable logging
 
