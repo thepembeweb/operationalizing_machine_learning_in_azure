@@ -1,6 +1,6 @@
 # Operationalizing Machine Learning pipeline in Azure
 
-This project demonstrates how to use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. IN addition it involves how to create, publish, and consume a pipeline.
+This project demonstrates how to use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. In addition it involves how to create, publish, and consume a pipeline.
 
 ## Architectural Diagram
 ![alt Architectural Diagram](screenshots/ml-architecture.png)
@@ -15,15 +15,15 @@ This project demonstrates how to use Azure to configure a cloud-based machine le
 
 ## Key Steps
 
+
 ### 1: Authentication
-Authentication was done through the provided Udacity lab. 
+Authentication was done through the provided Udacity lab.
+
 
 ### 2: Automated ML Experiment
 
-  * Create a New Automated ML run
+  * In this step we created a New Automated ML run by linking it to the Bank Marketing Dataset, creating a compute cluster to run it
    ![alt Architectural Diagram](screenshots/_1-create-new-automated-ml-run.png)
-   ![alt Architectural Diagram](screenshots/_2-create-compute-cluster.png)
-   ![alt Architectural Diagram](screenshots/_3-ml-run-additional-configurations.png)
   * Select and upload the Bankmarketing dataset
    ![alt Architectural Diagram](screenshots/1-registered-datasets.png)
   * Configure a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes.
@@ -33,35 +33,41 @@ Authentication was done through the provided Udacity lab.
   * Screenshot of Best model after experiment completed
     ![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
 
+
 ### 3: Deploy the best model
-Select the best model for deployment Deploy the model and enable "Authentication" Deploy the model using Azure Container Instance (ACI)
-![alt Best model after experiment completed](screenshots/_5-deploy-best-model.png)
-![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
+
+  Here we selected the best model for deployment Deploy the model and enable "Authentication" Deploy the model using Azure Container Instance (ACI)
+  ![alt Best model after experiment completed](screenshots/_5-deploy-best-model.png)
+  ![alt Best model after experiment completed](screenshots/3-best-model-after-experiment-completed.png)
 
 ### 4: Enable logging
 
-  * Ensure az is installed, as well as the Python SDK for Azure
-  * Create a new virtual environment with Python3
-  * Write and run code to enable Application Insights
-  * Use the provided code logs.py to view the logs
+  * Here we first ensure that az is installed, as well as the Python SDK for Azure
+  * Next, we create a new virtual environment with Python3
+  * To allow us to view logs we have tro enable Because Application Insights. We then updated code in logs.py and ran it to enable Application Insights
+  * We were able to view the logs by running 'python logs.py'
   * Screenshot of Application Insights enabled
     ![alt Experiment completed](screenshots/4-application-insights-enabled.png)
   * Screenshot of Logs running
     ![alt Experiment completed](screenshots/5-logs.png)
 
+
 ### 5: Swagger Documentation
   
-  * Run the swagger.sh and serve.py
+  * To view swagger we then ran swagger.sh to run the swagger UI container and makes it available on port 80
+  * We then run serve.py and then view the contents of the API for the model by visiting http://localhost:8000/swagger.json
   * Screenshot of swagger running on localhost showing the HTTP API methods and responses for the model
     ![alt Swagger](screenshots/6-swagger-1.png)
     ![alt Swagger](screenshots/6-swagger-2.png)
     ![alt Swagger](screenshots/6-swagger-3.png)
+
 
 ### 6: Consume model endpoints
 
   * Modifying both the **scoring_uri** and the **key** to match the key for your service and the URI that was generated after deployment
   * Execute the **endpoint.py** file
     ![alt Running endpoint](screenshots/7-running-endpoint.png)
+
 
 ### 7: Create and publish a pipeline
 
@@ -83,7 +89,13 @@ Select the best model for deployment Deploy the model and enable "Authentication
     ![alt Pipeline endpoint](screenshots/13-use-rundetails-widget.png)
   * Screenshot showing the scheduled run
     ![alt Pipeline endpoint](screenshots/12-scheduled-run.png)
-    
+
+## Future work
+For future experiments, we can try use more data to improve accuracy. 
+We can also try different models and see if we get a better accuracy and train a more robust model for inferencing.
+
+For AutoML, we can try implementing explicit model complexity limitations to prevent over-fitting. We can also test out different parameter values such as number of folds for Cross Validation. In addition we can try working with raw data only and passing it to AutoML to see how it handles it and if it will affect the chosen model and the model accuracy. Reducing over-fitting is an important task that may improve model accuracy. If a model is over-fitting, it might have a high accuracy with training data, but will fail when performing inferencing on test data.
+
 ## Screen Recording
 [Screencast on YouTube](https://youtu.be/I1e6oXN9gXM)
 
