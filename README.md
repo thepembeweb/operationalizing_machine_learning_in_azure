@@ -26,8 +26,7 @@ Authentication was done through the provided Udacity lab.
    ![alt Architectural Diagram](screenshots/_1-create-new-automated-ml-run.png)
   * Select and upload the Bankmarketing dataset
    ![alt Architectural Diagram](screenshots/1-registered-datasets.png)
-  * Configure a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes.
-  * Run the experiment using **Classification**, ensure **Explain best model** is checked. <br> On Exit criterion, reduce the default (3 hours) to 1 and reduce the             **Concurrency** from default to 5
+  * We then configured a new compute cluster with **Standard_DS12_v2** for the Virtual Machine Size and **1** as the number of minimum nodes and ran the experiment using **Classification**, ensuring **Explain best model** is checked.
   * Screenshot of Experiment completed
     ![alt Experiment completed](screenshots/2-experiment-completed.png)
   * Screenshot of Best model after experiment completed
