@@ -85,4 +85,23 @@ Select the best model for deployment Deploy the model and enable "Authentication
     ![alt Pipeline endpoint](screenshots/12-scheduled-run.png)
     
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+[Screencast on YouTube](https://youtu.be/I1e6oXN9gXM)
+
+## Built With
+
+* [Azure](https://portal.azure.com/) - Cloud service provider used
+* [Python](https://www.python.org/) - The programming language used
+* [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) - Dataset used
+
+## Authors
+
+* **[Pemberai Sweto](https://github.com/thepembeweb)** - *Initial work* - [Operationalizing Machine Learning pipeline in Azure
+](https://github.com/thepembeweb/operationalizing_machine_learning_in_azure)
+
+## License
+
+[![License](http://img.shields.io/:license-mit-green.svg?style=flat-square)](http://badges.mit-license.org)
+
+- This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
+- Copyright 2020 © [Pemberai Sweto](https://github.com/thepembeweb).
+
