@@ -114,5 +114,5 @@ For AutoML, we can try implementing explicit model complexity limitations to pre
 [![License](http://img.shields.io/:license-mit-green.svg?style=flat-square)](http://badges.mit-license.org)
 
 - This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
-- Copyright 2020 © [Pemberai Sweto](https://github.com/thepembeweb).
+- Copyright 2021 © [Pemberai Sweto](https://github.com/thepembeweb).
 
